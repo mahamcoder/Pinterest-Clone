@@ -1,0 +1,17 @@
+
+   @media screen and (max-width:1000px) {
+      .container{
+        width:350px;
+      }
+   }
+   @media screen and (max-width:800px) {
+    body{
+        background-size: cover;
+    }
+       input{
+        width: 250px;
+       }
+       .container{
+        width: 300px;
+       }
+   }  

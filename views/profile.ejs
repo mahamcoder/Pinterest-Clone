@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="/stylesheets/responsive/profile.css">
+</head>
+
+<body>
+    <!--? ========== Start header ========== -->
+    <div class="header">
+    <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="" srcset="">
+    <a href="/feed" id="ho" >home</a>
+    <a href="/profile" id="ho" class="profile">Profile</a>
+    <a href="" >
+        <input type="search" name="" id="" placeholder="search" class="search-bar">
+    </a>
+    <i class="ri-notification-4-fill bell"></i>
+    <a href="/logout" id="ho" class="logout" style="background-color: rgb(192, 33, 33);">logout</a>
+    <div class="drop-down">
+    <a href="" class="pi">
+        <img src="/images/uploads/1708694571912.jpg" alt="" srcset="">
+    </a>
+</div>
+
+
+    </div>
+    <!-- ========== End header ========== -->
+    
+
+    <!--? main content -->
+    <div class="main-container">
+        <!--? ========== Start dp ========== -->
+        <form hidden action="/fileupload" id="uploadform" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" id="">
+        </form>
+        <div class="prfdeta">
+            <div class="icon">
+                <span id="uploadicon">
+                    <i class="ri-pencil-fill text-icon"></i>
+                </span>
+                <div class="dp">
+                    <img src="/images/uploads/<%=user.profilephoto%>" alt="" srcset="">
+                </div>
+            </div>
+
+
+            <!-- ========== End dp ========== -->
+
+            <!--? ========== Start data of user ========== -->
+            <h1><%= user.username%></h1>
+            <h3>@ <%= user.username%></h3>
+            <a href="/profile" class="edit">edit</a>
+            <a href="/add" class="new">create new post</a>
+        </div>
+        <hr style=" opacity: 0.3;width: 50%;margin: auto;margin-top: 20px;">
+        <!-- ========== End data of user ========== -->
+
+        <!--? ========== Start card era ========== -->
+        
+	<main>
+    <div class="container_grid">
+      <div class="modal">
+      <div class='carousel'>
+        <div id="close-carousel">
+          <div class="x">
+          <div id="barra1"></div>
+          <div id="barra2"></div>
+          </div>
+        </div>
+        <div class="setas">
+        <div class="seta-esq">
+        <div id='prev-card'><i class="fa-solid fa-angle-left" style="color: #ffffff;"></i></div>
+        </div>
+        <div class="seta-dir">
+        <div id='next-card'><i class="fa-solid fa-angle-right" style="color: #ffffff;"></i></div>
+        </div>
+        </div>
+        <div class="centered-container">
+      <img class="modal-content" src="" alt="">
+          </div>
+      </div>
+      <span class="close"></span>
+      </div>
+      <div class='carousel-images'>
+        <% user.posts.forEach(function(elem){%>
+            <div class="card_small card_exp">
+                <img class="img_card" src="/images/uploads/<%= elem.image%>" alt="">
+                <figcaption><%= elem.title%></figcaption>
+              </div>
+       <% })%>
+     
+        </div>
+    </div>
+	</main>
+
+
+
+        <!-- ========== End card era ========== -->
+    </div>
+    <!-- ========== End data of user ========== -->
+    <script>
+        let icon = document.querySelector('#uploadicon');
+        icon.addEventListener('click', function () {
+            document.querySelector('#uploadform input').click();
+        })
+        let sub = document.querySelector('#uploadform');
+        sub.addEventListener('change', function () {
+            document.querySelector('#uploadform').submit();
+        })
+    </script>
+
+    <!--? ========== Start card script ========== -->
+    
+    <script>
+      // Get the modal
+var modal = document.getElementsByClassName("card_exp");
+
+// Get all the image elements with class "card_exp"
+var images = document.getElementsByClassName("card_exp");
+
+// Get the <span> element that closes the modal
+var x = document.getElementsByClassName('x')[0];
+var span = document.getElementsByClassName('carousel')[0];
+var bg = document.getElementsByClassName("modal");
+
+// Loop through each image and attach the click event
+for (var i = 0; i < images.length; i++) {
+images[i].onclick = function() {
+  setTimeout('span.style.display = "block";', 100)
+  span.style.opacity = "1";
+  setTimeout('bg[0].style.opacity = "1";',100)
+  /*modal.style.display = "block";*/
+};
+}
+
+// When the user clicks on <span> (x), close the modal
+x.onclick = function(){
+span.style.display = "none";
+span.style.opacity = "0";
+modal.style.opacity = "0";
+setTimeout('modal.style.display = "none";', 300)
+};
+
+var gridImages = Array.from(document.getElementsByClassName('img_card'));
+var carouselImages = document.querySelector('.carousel-images');
+var prevButton = document.querySelector('#prev-card');
+var nextButton = document.querySelector('#next-card');
+var modal = document.querySelector('.modal');
+var modalImg = document.querySelector('.modal-content');
+var currentIndex = 0;
+
+
+gridImages.forEach(function(image, index) {
+image.addEventListener('click', function() {
+  currentIndex = index;
+  showImage(currentIndex);
+  modal.style.display = 'block';
+});
+});
+
+
+// Navega para a imagem anterior
+
+prevButton.addEventListener('click', function() {
+currentIndex--;
+if (currentIndex < 0) {
+  currentIndex = gridImages.length - 1;
+}
+showImage(currentIndex);
+});
+
+nextButton.addEventListener('click', function() {
+currentIndex++;
+if (currentIndex >= gridImages.length) {
+  currentIndex = 0;
+}
+showImage(currentIndex);
+});
+
+// Define os manipuladores de eventos para os botões de navegação
+prevButton.addEventListener('click', prevButton);
+nextButton.addEventListener('click', nextButton);
+
+// Exibe a primeira imagem ao carregar a página
+function showImage(index) {
+modalImg.src = gridImages[index].src;
+}
+  </script>
+    <!-- ========== End card script ========== -->
+    
+    
+</body>
+
+</html>

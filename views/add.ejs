@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/stylesheets/add.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="/stylesheets/responsive/add.css">
+</head>
+
+<body>
+    <!--? ========== Start header ========== -->
+    <div class="header">
+    <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="" srcset="">
+    <a href="/feed" id="ho">home</a>
+    <a href="/profile" id="ho">profile</a>
+    <a href="">
+        <input type="search" name="" id="" placeholder="search" class="search-bar">
+    </a>
+    <i class="ri-notification-4-fill bell"></i>
+    <a href="/logout" id="ho" style="background-color: rgb(192, 33, 33);">logout</a>
+    <div class="drop-down">
+    <a href="" class="pi">
+        <img src="/images/uploads/1708694571912.jpg" alt="" srcset="">
+    </a>
+</div>
+
+
+    </div>
+    <!-- ========== End header ========== -->
+    <!--? ========== Start content ========== -->
+    <div class="content">
+        <h3>
+            Create a new post
+        </h3>
+        <hr>
+        <form action="/createpost" method="post" enctype="multipart/form-data">
+            <label for="uploadbtn"><i class="ri-inbox-unarchive-line"></i>upload file</label>
+            <input type="file" name="postimage" class="file" id="uploadbtn">
+            <input type="text" placeholder="title" name="title" class="in">
+            <textarea  id="" cols="30" rows="10" type="text" placeholder="discription" name="discription"></textarea>
+            <input type="submit" value="create post" class="submit">
+        </form>
+    </div>
+    
+    <!-- ========== End content ========== -->
+    
+</body>
+
+</html>

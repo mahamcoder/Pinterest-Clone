@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(94, 85, 85);
+}
+/***** header *****/ 
+.header{
+    width: 100%;
+   padding: 15px 10px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   background-color:rgb(94, 85, 85);
+}
+.header img{
+   width: 50px;
+   height: inherit;
+   margin-left: 20px;
+   border-radius: 50px;
+   -webkit-border-radius: 50px;
+   -moz-border-radius: 50px;
+   -ms-border-radius: 50px;
+   -o-border-radius: 50px;
+}
+.header img:hover{
+    background-color: #3c3c3c;
+}
+#ho{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: rgb(134, 121, 121);
+    padding: 13px 17px;
+    text-transform: capitalize;
+}
+#ho:hover{
+    background-color: #3c3c3c;
+}
+.search-bar{
+    width: 60vw;
+    padding: 17px 25px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    background-color:rgb(134, 121, 121);
+    color: rgb(75, 74, 74);
+    background-image: url("https://cdn4.iconfinder.com/data/icons/music-ui-solid-24px/24/search-3-256.png");
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-position: 10px;
+  border: 2px solid transparent;
+  outline: none;
+  text-decoration: none;
+}
+.search-bar::placeholder{
+    font-size: 15px;
+    color: rgb(168, 168, 168);
+    text-transform: capitalize;
+    padding: 15px;
+}
+.search-bar:focus{
+    background-image: none;
+    border: 4px solid  #7bb5f0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.search-bar:hover{
+    background-color: #3c3c3c;
+}
+.bell{
+    font-size: 25px;
+    color: #b3aaaa;
+    padding: 10px 10px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.bell:hover{
+    background-color: #3c3c3c;
+}
+.pi img{
+    width: 40px;
+    height: auto;
+    margin-left: 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px solid  #4b4b4b;
+}
+
+
+ /***** End header *****/
+/*****? content *****/ 
+.content{
+    color: white;
+    padding: 20px 30px;
+    margin-left: 50px;
+}
+h3{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+hr{
+    opacity: 0.2;
+    margin-top: 10px;
+    
+}
+.file{
+    margin-top: 10px;
+    width: 30%;
+    padding: 10px;
+}
+.content input{
+    display: block;
+    width: 35%;
+    padding: 15px 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-top: 15px;
+    border: none;
+    border: 2px solid transparent;
+    outline: none;
+}
+.content input:focus-visible{
+    border: 4px solid #7bb5f0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.content input,textarea::placeholder{
+    font-size: 15px;
+    text-transform: capitalize;
+}
+textarea{
+    display: block;
+    width: 35%;
+    padding: 15px 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-top: 10px;
+    outline: none;
+}
+textarea:focus-visible{
+    border: 4px solid #7bb5f0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+input[type='file']
+{
+    display: none;
+}
+label{
+    display:inline-block;
+    cursor: pointer;
+    background-color: rgb(170, 9, 9);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-size: 17px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    user-select: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    
+}
+i{
+margin-right: 10px;
+}
+.submit{
+    background-color: rgb(160, 4, 4);
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    border: 2px solid rgb(119, 3, 3);
+    text-transform: capitalize;
+}
+.submit:focus-visible{
+    outline: none;
+}
+
+ /***** End content *****/
+
+

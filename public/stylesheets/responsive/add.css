@@ -1,0 +1,120 @@
+@media screen and (max-width:1060px) {
+
+    .header img{
+        margin: 0;
+    }
+    .content input{
+        width: 45%;
+    }
+    textarea{
+        width: 45%;
+    }
+    }
+    @media screen and (max-width:1190px) {
+        .search-bar{
+            width: 55vw;
+        }
+        }
+    @media screen and (max-width:998px) {
+        .search-bar{
+            width: 50vw;
+        }
+    }
+    
+    @media screen and (max-width:962px) {
+        .search-bar{
+            width: 45vw;
+        }
+        .content input{
+            width: 50%;
+        }
+        textarea{
+            width: 50%;
+        }
+    }
+    
+    @media screen and (max-width:834px) {
+        .search-bar{
+            width: 47vw;
+        }
+        .bell{
+            display: none;
+        }
+       
+    }
+    
+    @media screen and (max-width:800px) {
+    .search-bar{
+        width: 55vw;
+    }
+    .content input{
+        width: 55%;
+    }
+    textarea{
+        width: 55%;
+    }
+    }
+    @media screen and (max-width:726px) {
+        .search-bar{
+            width: 50vw;
+        }
+       
+        }
+        @media screen and (max-width:680px) {
+           
+            .search-bar{
+                width: 47vw;
+            }
+            .content input{
+                width: 65%;
+            }
+            textarea{
+                width: 65%;
+            }
+            }
+                @media screen and (max-width:620px) {
+           
+                    .search-bar{
+                        width: 40vw;
+                    }
+                    .content input{
+                        width: 80%;
+                    }
+                    textarea{
+                        width: 80%;
+                    }
+                    }
+                    @media screen and (max-width:556px) {
+                        .container_grid{
+                            columns: 3;
+                            
+                           }
+                        .search-bar{
+                            width: 45vw;
+                        }
+                        
+    .header img{
+        margin: 0;
+    } 
+    }
+    @media screen and (max-width:460px) {
+      
+                     .search-bar{
+                         width: 45vw;
+                         font-size: 10px;
+                     }
+                    #ho{
+                        font-size: 14px;
+                    }
+                    .container_grid{
+                        columns: 2;
+                       }
+                       .content input{
+                        width: 100%;
+                    }
+                    textarea{
+                        width: 100%;
+                    }
+    }
+    
+    

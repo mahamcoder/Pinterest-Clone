@@ -1,0 +1,97 @@
+@media screen and (max-width:1277px) {
+
+    .header img{
+        margin: 0;
+    }
+    .header{
+        margin-top: 5px;
+    }
+    }
+    @media screen and (max-width:1190px) {
+        .search-bar{
+            width: 55vw;
+        }
+        }
+    @media screen and (max-width:998px) {
+        .search-bar{
+            width: 50vw;
+        }
+        .container_grid{
+            columns: 4;
+        }
+    }
+    
+    @media screen and (max-width:962px) {
+        .search-bar{
+            width: 45vw;
+        }
+    }
+    
+    @media screen and (max-width:834px) {
+        .search-bar{
+            width: 47vw;
+        }
+        .bell{
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width:800px) {
+        .container{
+           padding-top: 10vh;
+        }
+    .profile{
+        display: none;
+    }
+    .search-bar{
+        width: 55vw;
+    }
+    }
+    @media screen and (max-width:726px) {
+        .search-bar{
+            width: 50vw;
+        }
+        .container_grid{
+            columns: 3;
+        }
+        }
+        @media screen and (max-width:680px) {
+           
+            .search-bar{
+                width: 47vw;
+            }
+            }
+                @media screen and (max-width:620px) {
+           
+                    .search-bar{
+                        width: 40vw;
+                    }
+                    }
+                    @media screen and (max-width:556px) {
+                        .container_grid{
+                            columns: 3;
+                            
+                           }
+                        .search-bar{
+                            width: 45vw;
+                        }
+                        
+    .header img{
+        margin: 0;
+    } 
+    }
+    @media screen and (max-width:460px) {
+      
+                     .search-bar{
+                         width: 45vw;
+                         font-size: 10px;
+                     }
+                    #ho{
+                        font-size: 14px;
+                    }
+                    .container_grid{
+                        columns: 2;
+                       }
+    }
+    
+    

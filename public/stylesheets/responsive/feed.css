@@ -1,0 +1,103 @@
+@media screen and (max-width:1060px) {
+.search-bar{
+    width: 50vw;
+}
+header{
+    padding-right: 10px;
+}
+}
+@media screen and (max-width:998px) {
+    .search-bar{
+        width: 45vw;
+    }
+    .container{
+        columns: 4;
+    }
+}
+
+@media screen and (max-width:962px) {
+    .search-bar{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width:834px) {
+    .search-bar{
+        width: 45vw;
+    }
+    .bell{
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .container{
+       padding-top: 10vh;
+    }
+.home{
+    display: none;
+}
+.search-bar{
+    width: 53vw;
+}
+}
+@media screen and (max-width:726px) {
+    .home{
+        display: none;
+    }
+    .search-bar{
+        width: 50vw;
+    }
+    }
+    @media screen and (max-width:680px) {
+       
+        .search-bar{
+            width: 45vw;
+        }
+        .container{
+            columns: 3;
+        }
+        }
+        @media screen and (max-width:620px) {
+       
+            .search-bar{
+                width: 40vw;
+            }
+            .header img{
+                margin: 0;
+            } 
+            }
+            @media screen and (max-width:620px) {
+       
+                .search-bar{
+                    width: 40vw;
+                }
+                }
+                @media screen and (max-width:556px) {
+       .container{
+        columns: 3;
+       }
+                    .search-bar{
+                        width: 55vw;
+                    }
+                    .logout{
+                        display: none;
+                    }
+.header img{
+    margin: 0;
+} 
+}
+@media screen and (max-width:450px) {
+    .container{
+     columns: 2;
+    }
+                 .search-bar{
+                     width: 50vw;
+                     font-size: 10px;
+                 }
+                #ho{
+                    font-size: 14px;
+                }
+ 
+}
+

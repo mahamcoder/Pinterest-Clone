@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/responsive/index.css">
+</head>
+
+<body>
+    <div class="container" style="height: 520px;margin-top: 50px;">
+        <div class="content">
+            <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="" srcset="">
+            <H2>Welcome to pinterest</H2>
+            <% if(error.length > 0){ %>
+                <p class="error">
+                    <%= error %>
+                </p>
+                <% } %>
+                    <form action="/login" method="post">
+
+                        <input type="text" placeholder="Enter your name" name="username">
+
+                        <input type="password" placeholder="Enter your password" name="password">
+                        <input type="submit" class="submit" value="log In">
+
+                    </form>
+                    <a class="forgot">Forgot your password?</a>
+                    <p>By continuing, you agree to Pinterest's<br>
+                        Terms of Service, Privacy policy.
+
+                    </p>
+                    <hr style="width: 50%; margin: auto;margin-top: 20px; margin-bottom: 10px;">
+                    <a href="/register" class="acc">Don't have an account?</a>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
